@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOps Internship Task 6: Host a Static Website with GitHub Pages. Complete guide, live demo, and DevOps interview Q&A.">
+  <meta name="author" content="DevOps Intern">
+  <title>DevOps Task 6: Static Website on GitHub Pages</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><text y=%2226%22 font-size=%2226%22>🚀</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <div class="nav-brand-icon">⚡</div>
+        <div class="nav-brand-text">DevOps<span>Pages</span></div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#workflow" class="nav-link">Deployment Steps</a></li>
+        <li><a href="#url-calculator" class="nav-link">URL Tool</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#interview-qa" class="nav-link">Interview Q&amp;A</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">☀️</button>
+        <a href="https://github.com/saikripakks/html-static" target="_blank" rel="noopener noreferrer" class="btn-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>Repository</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="overview">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="badge">
+        <span class="badge-pulse"></span>
+        DevOps Internship &bull; Task 06 Completed
+      </div>
+      <h1 class="hero-title">
+        Deploying High-Performance Static Websites with <span class="text-gradient">GitHub Pages</span>
+      </h1>
+      <p class="hero-subtitle">
+        An end-to-end demonstration of automated static site deployment, Git-integrated CI/CD delivery, custom responsive styling, and core DevOps hosting concepts.
+      </p>
+      <div class="hero-buttons">
+        <a href="#workflow" class="btn btn-primary">Deployment Guide</a>
+        <a href="#interview-qa" class="btn btn-secondary">Interview Questions &amp; Answers</a>
+      </div>
+
+      <!-- Metrics / Highlights Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon">💰</div>
+          <div class="metric-value">100% Free</div>
+          <div class="metric-label">Zero cloud hosting server costs</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🔒</div>
+          <div class="metric-value">Automatic SSL</div>
+          <div class="metric-label">Pre-configured Let's Encrypt HTTPS</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🌐</div>
+          <div class="metric-value">Global CDN</div>
+          <div class="metric-label">Fast edge caching via Fastly CDN</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🔄</div>
+          <div class="metric-value">Git-Triggered</div>
+          <div class="metric-label">Automatic redeploy on `git push`</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Deployment Workflow Section -->
+  <section class="section" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">DevOps Execution</span>
+        <h2 class="section-title">Step-by-Step Deployment Guide</h2>
+        <p class="section-desc">Follow the standard Git-based deployment workflow used to publish this static website to GitHub Pages.</p>
+      </div>
+
+      <div class="workflow-steps">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon">📄</div>
+          <h3 class="step-title">Create index.html</h3>
+          <p class="step-desc">Design a clean semantic HTML structure with modern responsive CSS and interactive components.</p>
+          <div class="step-command">touch index.html css/style.css</div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon">🚀</div>
+          <h3 class="step-title">Push to GitHub Repo</h3>
+          <p class="step-desc">Initialize the repository, stage changes, commit, and push the branch to your remote GitHub repository.</p>
+          <div class="step-command">git push -u origin main</div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon">⚙️</div>
+          <h3 class="step-title">Open Repo Settings</h3>
+          <p class="step-desc">Navigate to your repository on GitHub, click the <strong>Settings</strong> tab, and select <strong>Pages</strong> in the left sidebar.</p>
+          <div class="step-command">Settings &rarr; Pages</div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-icon">🌿</div>
+          <h3 class="step-title">Select Branch &amp; Folder</h3>
+          <p class="step-desc">Under <strong>Build and deployment</strong>, choose <strong>Deploy from a branch</strong>. Select <code>main</code> branch and <code>/ (root)</code> folder, then click Save.</p>
+          <div class="step-command">Source: Branch 'main' / (root)</div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-card">
+          <div class="step-number">05</div>
+          <div class="step-icon">🔗</div>
+          <h3 class="step-title">Access Live Website</h3>
+          <p class="step-desc">GitHub triggers an automated deployment workflow. Within 1-2 minutes, the live URL is active and secured with HTTPS.</p>
+          <div class="step-command">https://&lt;user&gt;.github.io/&lt;repo&gt;/</div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step-card">
+          <div class="step-number">06</div>
+          <div class="step-icon">🎨</div>
+          <h3 class="step-title">Customize with CSS</h3>
+          <p class="step-desc">Iterate styling, add CSS custom variables, dark/light themes, animations, and commit to update in real time.</p>
+          <div class="step-command">git commit -am "style: update UI"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live URL Calculator Tool -->
+  <section class="section" id="url-calculator" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="tool-box">
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">GitHub Pages URL Generator</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+          Enter your GitHub username and repository name below to immediately preview your live GitHub Pages URL:
+        </p>
+        <div class="tool-form">
+          <div class="form-group">
+            <label for="gh-username" class="form-label">GitHub Username</label>
+            <input type="text" id="gh-username" class="form-input" value="saikripakks" placeholder="e.g. saikripakks">
+          </div>
+          <div class="form-group">
+            <label for="gh-repo" class="form-label">Repository Name</label>
+            <input type="text" id="gh-repo" class="form-input" value="html-static" placeholder="e.g. html-static">
+          </div>
+        </div>
+        <div class="url-result-box">
+          <span class="url-display" id="gh-url-display">https://saikripakks.github.io/html-static/</span>
+          <button id="copy-url-btn" class="copy-btn">📋 Copy URL</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture & Comparison Section -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">DevOps Concepts</span>
+        <h2 class="section-title">Static Hosting vs Dynamic Hosting</h2>
+        <p class="section-desc">Understanding why static website hosting on GitHub Pages is resilient, cost-effective, and secure.</p>
+      </div>
+
+      <div class="tool-box">
+        <div class="table-wrapper">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>GitHub Pages (Static Hosting)</th>
+                <th>Traditional / Dynamic Hosting</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hosting Cost</strong></td>
+                <td>100% Free (within usage limits)</td>
+                <td>Monthly cloud compute/server costs ($5 &ndash; $500+)</td>
+              </tr>
+              <tr>
+                <td><strong>Server Management</strong></td>
+                <td>Serverless / Zero server maintenance required</td>
+                <td>Requires patching OS, monitoring, load balancers</td>
+              </tr>
+              <tr>
+                <td><strong>SSL/TLS Certificate</strong></td>
+                <td>Automatic HTTPS provided by GitHub</td>
+                <td>Manual setup (Certbot / AWS ACM / Nginx config)</td>
+              </tr>
+              <tr>
+                <td><strong>Deployment Trigger</strong></td>
+                <td>Native Git push via built-in GitHub Actions</td>
+                <td>Requires external CI/CD pipelines (Jenkins, GitLab CI)</td>
+              </tr>
+              <tr>
+                <td><strong>Backend Logic / DB</strong></td>
+                <td>Client-side only (HTML, CSS, JS, external APIs)</td>
+                <td>Server-side runtime (Node.js, Python, PHP, SQL DBs)</td>
+              </tr>
+              <tr>
+                <td><strong>Attack Surface</strong></td>
+                <td>Minimal (no server vulnerabilities, no SQL injection)</td>
+                <td>High (server exploits, DB leaks, runtime flaws)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interview Questions & Answers Section -->
+  <section class="section" id="interview-qa">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">DevOps Knowledge Base</span>
+        <h2 class="section-title">Interview Questions &amp; Detailed Answers</h2>
+        <p class="section-desc">Comprehensive explanations for all 7 key interview questions from Task 6.</p>
+      </div>
+
+      <div class="qa-grid">
+        <!-- Question 1 -->
+        <div class="qa-item active">
+          <button class="qa-question" aria-expanded="true">
+            <span><span class="qa-badge">Q1</span> What is GitHub Pages?</span>
+            <span class="qa-toggle-icon">&darr;</span>
+          </button>
+          <div class="qa-answer">
+            <div class="qa-answer-content">
+              <strong>GitHub Pages</strong> is a free static web hosting service provided by GitHub that takes HTML, CSS, and JavaScript files directly from a repository, runs the files through a build pipeline (optionally using Jekyll or custom GitHub Actions), and publishes a website hosted on GitHub's global Content Delivery Network (Fastly CDN) with automated SSL/TLS encryption.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="qa-item">
+          <button class="qa-question" aria-expanded="false">
+            <span><span class="qa-badge">Q2</span> Can you host dynamic apps here?</span>
+            <span class="qa-toggle-icon">&darr;</span>
+          </button>
+          <div class="qa-answer">
+            <div class="qa-answer-content">
+              <strong>No, you cannot execute server-side dynamic applications</strong> (such as PHP, Node.js/Express, Python/Django, Ruby on Rails, or Java backends) directly on GitHub Pages because there is no server-side application runtime or direct database connection.
+              <br><br>
+              <em>However:</em> You <strong>can</strong> host Single Page Applications (SPAs built with React, Vue, Angular) and static site generators (Next.js static export, Gatsby, Hugo, Astro) as long as they compile to static HTML, CSS, and JS. Dynamic data can still be fetched client-side by calling external REST APIs or serverless functions (like AWS Lambda or Supabase).
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="qa-item">
+          <button class="qa-question" aria-expanded="false">
+            <span><span class="qa-badge">Q3</span> What are the limits of GitHub Pages?</span>
+            <span class="qa-toggle-icon">&darr;</span>
+          </button>
+          <div class="qa-answer">
+            <div class="qa-answer-content">
+              GitHub Pages is subject to specific usage guidelines and limits:
+              <ul>
+                <li><strong>Repository Size:</strong> Recommended to stay under 1 GB.</li>
+                <li><strong>Site Size:</strong> Published sites cannot be larger than 1 GB.</li>
+                <li><strong>Bandwidth:</strong> Soft limit of 100 GB per month.</li>
+                <li><strong>Build Limit:</strong> Maximum of 10 builds per hour.</li>
+                <li><strong>Commercial Restrictions:</strong> Prohibited from running high-frequency commercial e-commerce transactions or malicious operations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="qa-item">
+          <button class="qa-question" aria-expanded="false">
+            <span><span class="qa-badge">Q4</span> How do you update the website?</span>
+            <span class="qa-toggle-icon">&darr;</span>
+          </button>
+          <div class="qa-answer">
+            <div class="qa-answer-content">
+              Updating the website follows the standard Git workflow:
+              <ol style="padding-left: 1.25rem; margin-top: 0.5rem;">
+                <li>Make code changes locally to files like <code>index.html</code>, <code>style.css</code>, or scripts.</li>
+                <li>Stage and commit the changes: <code>git add . &amp;&amp; git commit -m "Update website content"</code>.</li>
+                <li>Push the commits to the publishing branch: <code>git push origin main</code>.</li>
+              </ol>
+              GitHub Pages automatically triggers a background deployment workflow to re-build and re-publish the site within 1 to 2 minutes.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="qa-item">
+          <button class="qa-question" aria-expanded="false">
+            <span><span class="qa-badge">Q5</span> What happens when you delete the repo?</span>
+            <span class="qa-toggle-icon">&darr;</span>
+          </button>
+          <div class="qa-answer">
+            <div class="qa-answer-content">
+              When the repository hosting the GitHub Pages site is deleted:
+              <ul>
+                <li>The associated GitHub Pages website is immediately <strong>taken offline</strong> and permanently deleted from GitHub's servers.</li>
+                <li>Any visitors navigating to the live URL will receive an HTTP <strong>404 Not Found</strong> error.</li>
+                <li>Any custom domain configuration attached to the repository is released.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="qa-item">
+          <button class="qa-question" aria-expanded="false">
+            <span><span class="qa-badge">Q6</span> What is the default file that loads?</span>
+            <span class="qa-toggle-icon">&darr;</span>
+          </button>
+          <div class="qa-answer">
+            <div class="qa-answer-content">
+              The default file that loads when a user visits the root directory is <strong><code>index.html</code></strong> (or <code>index.md</code> if Jekyll markdown processing is enabled).
+              <br><br>
+              Additionally, if GitHub Pages encounters an invalid route, it will automatically serve a custom <strong><code>404.html</code></strong> page if present in the root of your publishing branch.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="qa-item">
+          <button class="qa-question" aria-expanded="false">
+            <span><span class="qa-badge">Q7</span> Can you use a custom domain?</span>
+            <span class="qa-toggle-icon">&darr;</span>
+          </button>
+          <div class="qa-answer">
+            <div class="qa-answer-content">
+              <strong>Yes, custom domains are fully supported.</strong>
+              <br><br>
+              To configure a custom domain (e.g., <code>www.mydevopsportfolio.com</code>):
+              <ul>
+                <li><strong>Add CNAME file:</strong> Create a <code>CNAME</code> file in the repository containing your domain name, or enter the domain in repository <strong>Settings &rarr; Pages &rarr; Custom domain</strong>.</li>
+                <li><strong>DNS Configuration:</strong> In your DNS provider (e.g., Cloudflare, Route53, Namecheap):
+                  <ul>
+                    <li>For apex domains (<code>example.com</code>): Add <strong>A records</strong> pointing to GitHub's Anycast IP addresses (<code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code>, <code>185.199.111.153</code>).</li>
+                    <li>For subdomains (<code>www.example.com</code>): Add a <strong>CNAME record</strong> pointing to <code>&lt;username&gt;.github.io</code>.</li>
+                  </ul>
+                </li>
+                <li><strong>Enforce HTTPS:</strong> Check "Enforce HTTPS" in GitHub Pages settings to generate a free Let's Encrypt SSL certificate.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>DevOps Internship &bull; Task 06</h4>
+          <p>Static Website Hosting with GitHub Pages &bull; Automated Deployment Demo</p>
+        </div>
+        <div class="footer-links">
+          <a href="#overview">Overview</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#url-calculator">URL Tool</a>
+          <a href="#interview-qa">Interview Q&amp;A</a>
+          <a href="https://github.com/saikripakks/html-static" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="current-year">2026</span> DevOps Static Website Hosting. Built for Task 6 Submission.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
